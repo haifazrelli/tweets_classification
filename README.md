@@ -1,7 +1,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/haifazrelli/tweets_classification.git/main?filepath=tweets_classifier.ipynb)
 # tweets_classification
 ### Classification des Tweets
-Introduction
+#  Introduction
 La langue dans sa forme originale ne peut pas être traitée avec précision par une machine. Vous devez donc la traiter pour la rendre plus facile à comprendre. Pour donner un sens aux données, la première étape consiste à utiliser un processus appelé tokenization ou à scinder des chaînes en parties plus petites appelées tokens.
 
 Un jeton est une séquence de caractères dans le texte qui sert d’unité. Selon la manière dont vous créez les jetons, ceux-ci peuvent être constitués de mots, d’émoticônes, de hashtags, de liens ou même de caractères individuels. Un moyen simple de diviser le langage en jetons consiste à scinder le texte en fonction des espaces et de la ponctuation.
@@ -12,9 +12,22 @@ Maitriser la partie NLP (natural language processing) avec NLTK en Python
 Appliquer les principes de nettoyage des données
 Classer les tweets : regrouper ensemble les tweets qui sont similaires.
 
-on commence par l'extraction des tweets:
-<div style="width:260px;max-width:100%;"><div style="height:0;padding-bottom:42.69%;position:relative;"><iframe width="260" height="111" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/4qxyog"></iframe></div><p><a href="https://imgflip.com/gif/4qxyog">via Imgflip</a></p></div>
-
+on commence par l'extraction des tweets par les tokens
+```js
+import tweepy
+consumer_key = "wXXXXXXXXXXXXXXXXXXXXXXX1"
+consumer_secret = "qXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXh"
+access_token = "9XXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXi"
+access_token_secret = "kXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXT"
+```
+```js
+# Creating the authentication object
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+# Setting your access token and secret
+auth.set_access_token(access_token, access_token_secret)
+# Creating the API object while passing in auth information
+api = tweepy.API(auth)
+```
 1. Configurer les packages nécessaires
 
 dans ce projet on a besoin d'importer queleques bibliotheques:
@@ -48,6 +61,6 @@ d.Visualisation des résultats
 
 KMeans qui est un algorithme de clustering de données non supervisé classique. En un mot, K-means utilise k centroïdes (points qui sont le centre d'un cluster) pour définir les clusters. Un point de données est considéré comme faisant partie d'un cluster particulier s'il est plus proche du centre de gravité de ce cluster que de tout autre centre de gravité
 
-Conclusion:
+## Conclusion:
 
 Dans ce projet j'ai appris à récupérer des informations à partir d'une API twitter et j'ai également appris à gérer les données recuperées , d'analyser ces données et d'extraire  des sentiments grâce à Natural Language Processing et dedeterminer des clusters par l'algorithme KMeans .
