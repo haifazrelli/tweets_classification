@@ -1,5 +1,6 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/haifazrelli/tweets_classification.git/main?filepath=tweets_classifier.ipynb)
 # tweets_classification
-Classification des Tweets
+### Classification des Tweets
 Introduction
 La langue dans sa forme originale ne peut pas être traitée avec précision par une machine. Vous devez donc la traiter pour la rendre plus facile à comprendre. Pour donner un sens aux données, la première étape consiste à utiliser un processus appelé tokenization ou à scinder des chaînes en parties plus petites appelées tokens.
 
