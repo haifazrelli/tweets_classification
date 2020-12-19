@@ -28,7 +28,7 @@ auth.set_access_token(access_token, access_token_secret)
 # Creating the API object while passing in auth information
 api = tweepy.API(auth)
 ```
-1. Configurer les packages nécessaires
+## 1. Configurer les packages nécessaires
 
 dans ce projet on a besoin d'importer queleques bibliotheques:
 
@@ -42,22 +42,23 @@ pandas : Pandas est une bibliothèque écrite pour le langage de programmation P
 
 NLTK en Python pour toutes les tâches NLP de ce tutoriel. Dans cette étape, vous allez installer NLTK et télécharger les exemples de tweets que vous utiliserez pour former et tester votre modèle.
 
- 2.Nettoyage des tweets
+ ## 2.Nettoyage des tweets
  
 Les tweets contiennent des objets inutiles tels que des hashtags, des mentions, des liens et des signes de ponctuation qui peuvent affecter les performances d'un algorithme et doivent donc être supprimés. Tous les textes sont convertis en minuscules pour éviter que les algorithmes n'interprètent les mêmes mots avec des cas différents comme différents.
 3.Traitement des tweets : NLP (Natural LanguageProcessing)
 
 le package NLTK en Python pour toutes les tâches NLP . Dans cette étape, on commence par installer NLTK et télécharger les exemples de tweets qu'on utilise pour former et tester le modèle.
 
-a.Tokenization :
+#### a.Tokenization :
 
-b.supprimer Stop Words
+#### b.supprimer Stop Words
 
-c.Normalisation des mots
+#### c.Normalisation des mots
+#### d. analyse des sentiments
 
-d.Visualisation des résultats
+#### c.Visualisation des résultats
 
-4. Classification des tweets
+### 4. Classification des tweets
 
 KMeans qui est un algorithme de clustering de données non supervisé classique. En un mot, K-means utilise k centroïdes (points qui sont le centre d'un cluster) pour définir les clusters. Un point de données est considéré comme faisant partie d'un cluster particulier s'il est plus proche du centre de gravité de ce cluster que de tout autre centre de gravité
 
