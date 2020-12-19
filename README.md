@@ -65,3 +65,18 @@ KMeans qui est un algorithme de clustering de données non supervisé classique.
 ## Conclusion:
 
 Dans ce projet j'ai appris à récupérer des informations à partir d'une API twitter et j'ai également appris à gérer les données recuperées , d'analyser ces données et d'extraire  des sentiments grâce à Natural Language Processing et dedeterminer des clusters par l'algorithme KMeans .
+#### Dependances:
+numpy == 1.18.5
+matplotlib == 3.2.2
+py == 1.9.0
+scikit-learn == 0.23.1
+scipy == 1.5.0
+seaborn == 0.10.1
+statsmodels == 0.11.1
+pandas == 1.0.5
+ipywidgets == 7.5.1
+ipython == 7.16.1
+glob2 == 0.7
+nltk == 3.5
+tweepy == 3.9.0
+wordcloud == 1.8.1
